@@ -1,0 +1,48 @@
+<strong> {{ title | uppercase }} </strong>
+
+<br>
+
+<strong> {{ title | lowercase }} </strong>
+
+
+
+<br>
+<strong> {{todayDate | date }} </strong>
+
+
+<br>
+<strong> {{todayDate | date : 'short' }} </strong>
+
+
+
+<br>
+<strong> {{todayDate | date : 'fullDate' }} </strong>
+
+
+<br>
+<strong> {{todayDate | date : 'fullDate' | uppercase  }} </strong>
+
+<!-- ---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------- -->
+
+<!-- data transfomtion -->
+
+<!-------------------------...more -->
+
+<!-- {{ value_expression | date [ : format [ : timezone [ : locale ] ] ] }} -->
+
+
+<br>
+
+{{sentence}}
+
+<br>
+
+{{sentence | shortsentence : 30 }}
+
+
+
+<br>
+
+{{sentence | shortsentence : 50 }}
