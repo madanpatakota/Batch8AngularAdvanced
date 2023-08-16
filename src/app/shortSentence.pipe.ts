@@ -13,3 +13,6 @@ export class ShortSentencePipe implements PipeTransform {
       return value;
   }
 }
+
+
+// ng g c <coponent>

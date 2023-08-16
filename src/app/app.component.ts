@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Batch8AngularAdvanced';
 
+
+  filterData = "";
+
   employees = [
     {
       name: 'John',
@@ -34,4 +37,15 @@ export class AppComponent {
       information: 'He is in uk working as a Admin',
     },
   ];
+
+  AddEmp(){
+    this.employees.push( {
+      name: 'Robert.Jr',
+      skill: 'AI',
+      started: new Date(),
+      information: 'He is in london working as a Manager',
+    });
+
+    console.log(this.employees);
+  }
 }
