@@ -4,6 +4,7 @@ import { Directive ,
    Renderer2,
    Input , 
    HostBinding, 
+   HostListener
    } from '@angular/core';
 
 @Directive({
@@ -16,6 +17,9 @@ export class AdvancedcolorDirective implements OnInit {
 
 
   @Input('color') color : string;
+  @Input('mouseentercolor') mouseentercolor : string;
+  @Input('mouseleavecolor') mouseleavecolor : string;
+  
 
 
   // Host binding is useful for set a property value on the host element.
@@ -35,6 +39,19 @@ export class AdvancedcolorDirective implements OnInit {
       this.hostbackgroundcolor  = this.color;
 
   }
+
+  @HostListener('mouseover') mouseenter(){
+         this.render.setStyle(this.elementref.nativeElement , 'background-color' , this.mouseentercolor);
+
+  }
+
+
+  @HostListener('mouseleave') mouseleave(){
+    this.render.setStyle(this.elementref.nativeElement , 'background-color' , this.mouseleavecolor);
+}
+
+
+
 
 
 }
