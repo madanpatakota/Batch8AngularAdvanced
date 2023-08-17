@@ -6,6 +6,8 @@ import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { ShortSentencePipe  }  from './shortSentence.pipe';
 import { DatafilterPipe } from './datafilter.pipe';
 import { FormsModule } from '@angular/forms';
+import { BasicColorDirective } from './basic.directive';
+import { AdvancedcolorDirective } from './advancedcolor.directive';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { FormsModule } from '@angular/forms';
     PipeDemoComponent,
     ShortSentencePipe,
     DatafilterPipe,
+    BasicColorDirective,
+    AdvancedcolorDirective
   ],
   imports: [
     BrowserModule,

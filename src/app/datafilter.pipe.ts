@@ -7,10 +7,10 @@ export class DatafilterPipe implements PipeTransform {
 
   //employees | datafilter
   transform(value: any, ...args: any[]): any {
-    console.log("Data filter has started");
-    console.log(value);  // employees
-    console.log(args);   // textbox value
-    console.log("Data filter has ended");
+    // console.log("Data filter has started");
+    // console.log(value);  // employees
+    // console.log(args);   // textbox value
+    // console.log("Data filter has ended");
 
     /* i am going to write the code */
     let searchFilterValue = args[0];

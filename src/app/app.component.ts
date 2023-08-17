@@ -46,6 +46,6 @@ export class AppComponent {
       information: 'He is in london working as a Manager',
     });
 
-    console.log(this.employees);
+    // console.log(this.employees);
   }
 }
